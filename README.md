@@ -21,3 +21,21 @@ git clone https://github.com/username/nama-repo.git
 cd nama-repo
 3. Buka file index.html di browser
 atau jalankan server lokal (contoh dengan VSCode Live Server).
+
+## Tampilan Website
+![Tampilan Halaman Utama]()
+![Tampilan Halaman Product]()
+![Tampilan Halaman Favorite]()
+![Tampilan Halaman Keranjang]()
+
+## Tujuan Projek
+Proyek ini dibuat sebagai latihan dalam membangun website e-commerce sederhana dengan:
+- Struktur kode yang terorganisir
+- Tampilan UI/UX menarik
+- Fitur dasar jual beli online
+
+## Rencana Pengembangan
+- integrasi dengan database (MySQL / Firebase)
+- Sistem login & register
+- Halaman admin untuk manajemen produk
+- Pembayaran online simulasi
