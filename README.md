@@ -50,3 +50,5 @@ Proyek ini dibuat sebagai latihan dalam membangun website e-commerce sederhana d
 - Sistem login & register
 - Halaman admin untuk manajemen produk
 - Pembayaran online simulasi
+## LINK YOUTUBE
+https://youtu.be/3mfS7TG999g
