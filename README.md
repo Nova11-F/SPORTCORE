@@ -24,14 +24,19 @@ atau jalankan server lokal (contoh dengan VSCode Live Server).
 
 ## Tampilan Website
 * Tampilan Halaman Utama
+
 ![Tampilan Halaman Utama](img/Tampilan_Home.png)
 * Tampilan Halaman Product
+  
 ![Tampilan Halaman Product](img/Tampilan_Produk.png)
 * Tampilan Halaman Favorite
+  
 ![Tampilan Halaman Favorite](img/Tampilan_favorite.png)
 * Tampilan Halaman Keranjang
+  
 ![Tampilan Halaman Keranjang](img/Tapilan_keranjang.png)
 * Tampilan Checkout
+  
 ![Tampilan Halaman Chechout](img/Tampilan_checkout.png)
 
 ## Tujuan Projek
