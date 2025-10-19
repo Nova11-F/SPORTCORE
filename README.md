@@ -26,7 +26,8 @@ atau jalankan server lokal (contoh dengan VSCode Live Server).
 ![Tampilan Halaman Utama](img/Tampilan_Home.png)
 ![Tampilan Halaman Product](img/Tampilan_Produk.png)
 ![Tampilan Halaman Favorite](img/Tampilan_favorite.png)
-![Tampilan Halaman Keranjang](img/Tampilan_keranjang.png)
+![Tampilan Halaman Keranjang](img/Tapilan_keranjang.png)
+![Tampilan Halaman Chechout](img/Tampilan_checkout.png)
 
 ## Tujuan Projek
 Proyek ini dibuat sebagai latihan dalam membangun website e-commerce sederhana dengan:
