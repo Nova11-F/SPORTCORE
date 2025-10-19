@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportCore</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.8-dist/css/bootstrap-grid.min.css"
+    />
+
+    <!-- Icon feather -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="Navbar">
+      <div class="Navbar-Nav">
+        <div class="Navbar-left">
+          <a href="#"
+            ><img src="img/logoSportCore.png" alt="Gambar TIdak Tersedia"
+          /></a>
+          <a href="#"
+            ><p>SPORT<span>CORE</span></p></a
+          >
+        </div>
+
+        <div class="Navbar-mid">
+          <a href="index.html">Home</a>
+          <a href="Product.html">Products</a>
+          <a href="index.html#About">About</a>
+          <a href="index.html#Contact">Contact</a>
+        </div>
+
+        <div class="Navbar-right">
+          <a href="favorite.html"><i data-feather="heart"></i></a>
+          <a href="cart.html" class="cart-link">
+            <i data-feather="shopping-bag"></i>
+            <span id="cartCount" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Product Detail Section -->
+    <section>
+      <div class="detail-container">
+        <div class="detail-image">
+          <img id="detailImage" src="" alt="Gambar Tidak Tersedia" />
+        </div>
+
+        <div class="detail-info">
+          <h2 id="detailName"></h2>
+          <h3 id="detailPrice"></h3>
+
+          <label for="size">Select Size</label>
+          <select
+            name="shoe-size"
+            required
+            class="size-select"
+            id="productSize"
+          >
+            <option value="" disabled selected hidden>Size</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+          </select>
+
+          <button class="addToCart" id="addToCart">+ Add to Cart</button>
+          <button class="buy-now">Buy this item</button>
+
+          <div class="detail-social">
+            <a href="#" id="chatBtn">
+              <i data-feather="message-square"></i>
+              <span>Chat</span>
+            </a>
+            <p>|</p>
+            <a href="#" id="wishlistBtn" class="wishlist-btn">
+              <i data-feather="heart"></i>
+              <span>Wishlist</span>
+            </a>
+            <p>|</p>
+            <a href="#" id="shareBtn">
+              <i data-feather="share"></i>
+              <span>Share</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section>
+      <div class="detail-description">
+        <h3>Deskripsi</h3>
+        <div>
+          <h4>Brand: Ardiles</h4>
+          <h4>Warna: Putih Merah</h4>
+          <h4>Kategori: Running</h4>
+          <h4>Material: Mesh dan Karet</h4>
+          <h4>Ukuran Tersedia: 38, 39, 40, 41, 42, 43, 44</h4>
+        </div>
+
+        <p>
+          Sepatu lari ini dirancang untuk kenyamanan dan performa maksimal.
+          Dengan teknologi terbaru, sepatu ini memberikan dukungan optimal untuk
+          setiap langkah Anda. Bagian atasnya terbuat dari bahan bernapas yang
+          menjaga kaki tetap sejuk selama berlari. Sol luar yang tahan lama
+          memberikan traksi yang baik di berbagai permukaan, sementara bantalan
+          di bagian tengah memberikan penyerapan benturan yang efektif. Desain
+          ergonomis memastikan fit yang sempurna, mengurangi risiko cedera dan
+          meningkatkan efisiensi lari Anda. Cocok untuk pelari pemula maupun
+          profesional, sepatu ini adalah pilihan ideal untuk meningkatkan
+          performa lari Anda.
+        </p>
+      </div>
+
+      <div class="detail-review">
+        <h3>Review</h3>
+        <p>Belum ada review untuk produk ini.</p>
+      </div>
+    </section>
+    <h3 class="title-like">You Might Likes This Product</h3>
+    <div class="product-container" id="productHome"></div>
+    </section>
+
+    <!-- ===== POPUP SHARE ===== -->
+<div class="popup-overlay" id="popupShare">
+  <div class="popup-box">
+    <span class="close-btn" onclick="closePopup('share')">&times;</span>
+    <h3>Bagikan Produk Ini</h3>
+    <p>Pilih platform untuk membagikan produk:</p>
+    <div class="share-buttons">
+      <button class="icon-btn" id="shareBtn">
+        <I data-feather="facebook"></I>
+        <span>facebook</span>
+      </button>
+      <button class="icon-btn" id="shareBtn">
+        <I data-feather="instagram"></I>
+        <span>Instagram</span>
+      </button>
+      <button class="icon-btn" id="shareBtn">
+        <I data-feather="twitter"></I>
+        <span>twitter</span>
+      </button>
+      <button class="icon-btn" id="shareBtn">
+        <I data-feather="link-2"></I>
+        <span>Salin link</span>
+      </button>
+      <button class="icon-btn" id="shareBtn">
+        <I data-feather="download"></I>
+        <span>download</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== POPUP CHAT ===== -->
+<div class="popup-overlay" id="popupChat">
+  <div class="popup-box">
+    <span class="close-btn" onclick="closePopup('chat')">&times;</span>
+    <h3>Hubungi Kami</h3>
+    <p>Kirim pesan langsung ke admin toko:</p>
+    <textarea placeholder="Tulis pesan kamu..." rows="3"></textarea>
+    <button class="send-btn">Kirim</button>
+  </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-title">
+            <img src="img/logoSportCore.png" alt="" />
+            <h3>SPORTCORE</h3>
+          </div>
+          <p>
+            Di SportCore, kami percaya bahwa olahraga bukan sekadar aktivitas,
+            tetapi gaya hidup. Kami berkomitmen menghadirkan produk yang
+            menginspirasi setiap orang untuk bergerak lebih aktif setiap hari.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="fb">
+              <span class="tooltip">Facebook</span>
+              <i data-feather="facebook"></i>
+            </a>
+            <a href="#" class="ig">
+              <span class="tooltip">Instagram</span>
+              <i data-feather="instagram" class="ig"></i>
+            </a>
+            <a href="#" class="li">
+              <span class="tooltip">LinkedIn</span>
+              <i data-feather="linkedin"></i>
+            </a>
+            <a href="#" class="tw">
+              <span class="tooltip">Twitter</span>
+              <i data-feather="twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div>
+            <h3>Menu</h3>
+            <ul>
+              <li>
+                <a href=""><p>Home</p></a>
+              </li>
+              <li>
+                <a href=""><p>Product</p></a>
+              </li>
+              <li>
+                <a href=""><p>Brand</p></a>
+              </li>
+              <li>
+                <a href=""><p>About</p></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Product</h3>
+            <ul>
+              <li>
+                <a href=""><p>Basket</p></a>
+              </li>
+              <li>
+                <a href=""><p>Badminton</p></a>
+              </li>
+              <li>
+                <a href=""><p>Futsal</p></a>
+              </li>
+              <li>
+                <a href=""><p>Runing</p></a>
+              </li>
+              <li>
+                <a href=""><p>Sepak bola</p></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Brand</h3>
+            <ul>
+              <li>
+                <a href=""><p>Hoka</p></a>
+              </li>
+              <li>
+                <a href=""><p>Specs</p></a>
+              </li>
+              <li>
+                <a href=""><p>Ortuseight</p></a>
+              </li>
+              <li>
+                <a href=""><p>Mills</p></a>
+              </li>
+              <li>
+                <a href=""><p>Nineten</p></a>
+              </li>
+              <li>
+                <a href=""><p>Ardiles</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>&copy;2025 <span>SPORTCORE</span>. All rights reserved</p>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of Service</a>
+          <a href="">Cookies Settings</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Icon feather -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript -->
+    <script src="JS/script.js"></script>
+
+
+
+  </body>
+</html>

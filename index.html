@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportCore</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.8-dist/css/bootstrap-grid.min.css"
+    />
+
+    <!-- Icon feather -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="Navbar">
+      <div class="Navbar-Nav">
+        <div class="Navbar-left">
+          <a href="#"
+            ><img src="img/logoSportCore.png" alt="Gambar TIdak Tersedia"
+          /></a>
+          <a href="#"
+            ><p>SPORT<span>CORE</span></p></a
+          >
+        </div>
+        <div class="Navbar-mid">
+          <a href="#">Home</a>
+          <a href="Product.html">Products</a>
+          <a href="#About">About</a>
+          <a href="#Contact">Contact</a>
+        </div>
+        <div class="Navbar-right">
+          <a href="favorite.html"><i data-feather="heart"></i></a>
+          <a href="cart.html" class="cart-link">
+          <i data-feather="shopping-bag"></i>
+          <span id="cartCount" class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bannner Slider -->
+    <section class="banner" id="banner">
+      <div class="slider">
+        <div class="slides">
+          <img
+            src="img/banner1.png"
+            alt="Gambar 1"
+          />
+          <img
+            src="img/banner2.png"
+            alt="Gambar 2"
+          />
+          <img
+            src="img/banner3.png"
+            alt="Gambar 3"
+          />
+        </div>
+        <button class="prev" onclick="plusSlides(-1)">
+          <i data-feather="chevron-left"></i>
+        </button>
+        <button class="next" onclick="plusSlides(1)">
+          <i data-feather="chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+     <section class="category" id="category">
+       <div class="category-title">
+         <p>Categories</p>
+         <h3>Featured <span>Categories</span></h3>
+       </div>
+        <div class="category-list">
+          <div class="category-card" onclick="goToCategory('Badminton')" data-category="Badminton"> 
+          <img src="img/category-badminton-removebg-preview-removebg-preview.png" alt="">
+          <p>Badminton</p>
+          </div>
+          <div class="category-card" onclick="goToCategory('Basket')" data-category="Basket">
+          <img src="img/categoty-basket-removebg-preview.png" alt="">
+          <p>Basket</p>
+          </div>
+          <div class="category-card" onclick="goToCategory('Futsal')" data-category="Futsal">
+          <img src="img/category-futsal-removebg-preview.png" alt="">
+          <p>Futsal</p>
+          </div>
+          <div class="category-card" onclick="goToCategory('Running')" data-category="Running">
+          <img src="img/category-running-removebg-preview.png" alt="">
+          <p>Running</p>
+          </div>
+          <div class="category-card" onclick="goToCategory('soccer')" data-category="soccer">
+          <img src="img/category-soccer-removebg-preview.png" alt="">
+          <p>Sepak Bola</p>
+          </div>
+        </div>
+     </section>
+
+    <!-- Products Section -->
+    <section class="product" id="product">
+      <div class="Product-title">
+      <div class="Product-title-1">
+      <h3>Featured Products</h3>
+      </div>
+      <div class="Product-title-2">
+        <a href="Product.html">
+      <button>
+        <P>View all Products</P>
+        <i data-feather="arrow-right"></i>
+      </button>
+      </a>
+      </div>
+      </div>
+      <div class="product-container" id="productHome">
+      </div>
+    </section>
+
+    <!-- About Section -->
+     <section class="About" id="About">
+      <div class="About-title">
+      <h3>About <span>Us</span></h3>
+      </div>
+      <div class="About-container">
+          <img src="img/store.jpeg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum numquam optio inventore, saepe alias reiciendis hic quibusdam! Explicabo at minus, repellat suscipit facilis deserunt minima corrupti voluptatum provident maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quae, ducimus error modi ut cumque sint reprehenderit libero earum. Esse porro exercitationem expedita blanditiis architecto quia! Accusantium maiores fugit ipsum.</p>
+      </div>
+      <div class="About-container-2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum numquam optio inventore, saepe alias reiciendis hic quibusdam! Explicabo at minus, repellat suscipit facilis deserunt minima corrupti voluptatum provident maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quae, ducimus error modi ut cumque sint reprehenderit libero earum. Esse porro exercitationem expedita blanditiis architecto quia! Accusantium maiores fugit ipsum.</p>
+        <img src="img/store (2).jpeg" alt="">
+      </div>
+     </section>
+
+     <!-- Testimonial Section -->
+      <section class="Testimoni" id="Testimoni">
+        <div class="Testimoni-title">
+          <h3>What <span>Our Client's</span> Say's</h3>
+          <p>Misi kami adalah mendorong kemajuan dan meningkatkan kualitas hidup pelanggan kami dengan memberikan produk dan layanan unggulan yang melampaui harapan.</p>
+        </div>
+        <div class="Testimoni-container">
+          <div class="Testimoni-box">
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos aliquid ipsum expedita dolorum laboriosam natus fuga distinctio iste accusantium.</q>
+            <h3>John Doe</h3>
+            <span>Customer</span>
+          </div>
+          <div class="Testimoni-box">
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos aliquid ipsum expedita dolorum laboriosam natus fuga distinctio iste accusantium.</q>
+            <h3>John Doe</h3>
+            <span>Customer</span>
+          </div>
+          <div class="Testimoni-box">
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos aliquid ipsum expedita dolorum laboriosam natus fuga distinctio iste accusantium.</q>
+            <h3>John Doe</h3>
+            <span>Customer</span>
+          </div>
+          <div class="Testimoni-box">
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos aliquid ipsum expedita dolorum laboriosam natus fuga distinctio iste accusantium.</q>
+            <h3>John Doe</h3>
+            <span>Customer</span>
+          </div>
+          <div class="Testimoni-box">
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos aliquid ipsum expedita dolorum laboriosam natus fuga distinctio iste accusantium.</q>
+            <h3>John Doe</h3>
+            <span>Customer</span>
+          </div>
+          <div class="Testimoni-box">
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos aliquid ipsum expedita dolorum laboriosam natus fuga distinctio iste accusantium.</q>
+            <h3>John Doe</h3>
+            <span>Customer</span>
+          </div>
+          <div class="Testimoni-box hidden">
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos aliquid ipsum expedita dolorum laboriosam natus fuga distinctio iste accusantium.</q>
+            <h3>John Doe</h3>
+            <span>Customer</span>
+          </div>
+          <div class="Testimoni-box hidden">
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos aliquid ipsum expedita dolorum laboriosam natus fuga distinctio iste accusantium.</q>
+            <h3>John Doe</h3>
+            <span>Customer</span>
+          </div>
+          <div class="Testimoni-box hidden">
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos aliquid ipsum expedita dolorum laboriosam natus fuga distinctio iste accusantium.</q>
+            <h3>John Doe</h3>
+            <span>Customer</span>
+          </div>
+          <button class="tombol" id="toggleBtn">See All Review</button>
+        </div>
+      </section>
+
+     <!-- Contact Section -->
+      <section class="Contact" id="Contact">
+        <div class="Contact-container">
+          <div class="Contact-left">
+            <h3>Contact <span>Us</span></h3>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed velit esse dignissimos quos. Quasi corrupti iste totam labore accusantium saepe assumenda ipsum est? Ducimus ea placeat libero? Assumenda, velit.</p>
+            <div class="Contact-social">
+              <a href="">
+            <i data-feather="mail"></i>
+            </a>
+            <p>sportcore@gmail.com</p>
+            </div>
+            <div class="Contact-social">
+              <a href="">
+            <i data-feather="phone"></i>
+            </a>
+            <p>+62 813 0131 9283</p>
+            </div>
+            <div class="Contact-social">
+              <a href="">
+            <i data-feather="map-pin"></i>
+            </a>
+            <p>123.surabaya</p>
+            </div>
+          </div>
+          <div class="Contact-right">
+            <div class="Box-form">
+              <h3>Get in Touch</h3>
+              <p>You can reach us anytime</p>
+              <div>
+                <form action="" id="pesanForm">
+                <label for="">First name</label>
+              <input type="text" id="first_name" placeholder="First name" required>
+              </div>
+              <div>
+              <label for="">Last name</label>
+              <input type="text" id="last_name" placeholder="Last name" required>
+              </div>
+              <div>
+              <label for="">Email</label>
+              <input type="email" id="email" placeholder="you@email.com" required>
+              </div>
+              <div class="row-3">
+              <label for="">Message</label>
+              <textarea name="pesan" id="pesan" placeholder="Leave us a message..." maxlength="200"></textarea>
+              </div>
+                <button type="submit">Send message</button>
+              </div>
+              </form>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-title">
+            <img src="img/logoSportCore.png" alt="" />
+            <h3>SPORTCORE</h3>
+          </div>
+          <p>
+            Di SportCore, kami percaya bahwa olahraga bukan sekadar aktivitas,
+            tetapi gaya hidup. Kami berkomitmen menghadirkan produk yang
+            menginspirasi setiap orang untuk bergerak lebih aktif setiap hari.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="fb">
+              <span class="tooltip">Facebook</span>
+              <i data-feather="facebook"></i>
+            </a>
+            <a href="#" class="ig">
+              <span class="tooltip">Instagram</span>
+              <i data-feather="instagram" class="ig"></i>
+            </a>
+            <a href="#" class="li">
+              <span class="tooltip">LinkedIn</span>
+              <i data-feather="linkedin"></i>
+            </a>
+            <a href="#" class="tw">
+              <span class="tooltip">Twitter</span>
+              <i data-feather="twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div>
+            <h3>Menu</h3>
+            <ul>
+              <li>
+                <a href=""><p>Home</p></a>
+              </li>
+              <li>
+                <a href=""><p>Product</p></a>
+              </li>
+              <li>
+                <a href=""><p>Brand</p></a>
+              </li>
+              <li>
+                <a href=""><p>About</p></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Product</h3>
+            <ul>
+              <li>
+                <a href=""><p>Basket</p></a>
+              </li>
+              <li>
+                <a href=""><p>Badminton</p></a>
+              </li>
+              <li>
+                <a href=""><p>Futsal</p></a>
+              </li>
+              <li>
+                <a href=""><p>Runing</p></a>
+              </li>
+              <li>
+                <a href=""><p>Sepak bola</p></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Brand</h3>
+            <ul>
+              <li>
+                <a href=""><p>Hoka</p></a>
+              </li>
+              <li>
+                <a href=""><p>Specs</p></a>
+              </li>
+              <li>
+                <a href=""><p>Ortuseight</p></a>
+              </li>
+              <li>
+                <a href=""><p>Mills</p></a>
+              </li>
+              <li>
+                <a href=""><p>Nineten</p></a>
+              </li>
+              <li>
+                <a href=""><p>Ardiles</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">
+          <p>&copy;2025 <span>SPORTCORE</span>. All rights reserved</p>
+        </div>
+        <div class="footer-bottom-right">
+          <a href="">Privacy Policy</a>
+          <a href="">Terms of Service</a>
+          <a href="">Cookies Settings</a>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap -->
+     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Icon feather -->
+    <script>
+      feather.replace();
+      </script>
+      
+      <!-- Javascript -->
+      <script src="JS/script.js"></script>
+  </body>
+</html>
