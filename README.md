@@ -1,54 +1,237 @@
-# SPORTCORE
-Website e-commerce untuk jual beli sepatu olahraga.
-Dibangun menggunakan HTML, CSS, dan JavaScript , website ini memungkinkan pengguna untuk menjelajahi berbagai jenis sepatu olahraga, menambahkan produk ke keranjang, dan melakukan pembelian secara online.
+<div align="center">
 
-## Fitur Utama
-- Daftar produk sepatu olahraga berbagai kategori (running, basket, futsal, training, dll)
-- Halaman detail produk dengan deskripsi dan harga
-- Fitur pencarian dan filter
-- Keranjang belanja (shopping cart)
-- Proses checkout sederhana
+# 👟 SPORTCORE
 
-## Teknologi yang Digunakan
-- HTML5 struktur halaman
-- CSS3 styling dan layout responsif
-- JavaScript interaktivitas dan logika aplikasi
+### *Modern Sports Shoes E-Commerce Website*
 
-## Cara Menjalankan Proyek
-1. Clone repository ini ke komputer kamu:
-git clone https://github.com/username/nama-repo.git
-2. Masuk ke folder proyek:
-cd nama-repo
-3. Buka file index.html di browser
-atau jalankan server lokal (contoh dengan VSCode Live Server).
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Responsive](https://img.shields.io/badge/Responsive-Yes-success?style=for-the-badge)]()
+[![License](https://img.shields.io/badge/License-Educational-blue?style=for-the-badge)]()
 
-## Tampilan Website
-* Tampilan Halaman Utama
+Website e-commerce sederhana untuk menjual berbagai jenis **sepatu olahraga** dengan tampilan modern, responsif, dan interaktif.
 
-![Tampilan Halaman Utama](img/Tampilan_Home.png)
-* Tampilan Halaman Product
-  
-![Tampilan Halaman Product](img/Tampilan_Produk.png)
-* Tampilan Halaman Favorite
-  
-![Tampilan Halaman Favorite](img/Tampilan_favorite.png)
-* Tampilan Halaman Keranjang
-  
-![Tampilan Halaman Keranjang](img/Tapilan_keranjang.png)
-* Tampilan Checkout
-  
-![Tampilan Halaman Chechout](img/Tampilan_checkout.png)
+</div>
 
-## Tujuan Projek
-Proyek ini dibuat sebagai latihan dalam membangun website e-commerce sederhana dengan:
-- Struktur kode yang terorganisir
-- Tampilan UI/UX menarik
-- Fitur dasar jual beli online
+---
 
-## Rencana Pengembangan
-- integrasi dengan database (MySQL / Firebase)
-- Sistem login & register
-- Halaman admin untuk manajemen produk
-- Pembayaran online simulasi
-## LINK YOUTUBE
-https://youtu.be/3mfS7TG999g
+# 📖 Tentang Proyek
+
+**SPORTCORE** merupakan website e-commerce yang dibangun menggunakan **HTML, CSS, dan JavaScript**.
+
+Website ini memungkinkan pengguna untuk:
+
+- 👟 Menjelajahi berbagai produk sepatu olahraga
+- ❤️ Menyimpan produk favorit
+- 🛒 Menambahkan produk ke keranjang
+- 💳 Melakukan proses checkout sederhana
+
+Proyek ini dibuat sebagai media pembelajaran dalam mengembangkan website e-commerce dengan menerapkan konsep **UI/UX**, **DOM Manipulation**, **Local Storage**, dan **Responsive Web Design**.
+
+---
+
+# ✨ Fitur Utama
+
+- 🏃 Daftar produk sepatu olahraga
+- 🔍 Pencarian produk
+- 🎯 Filter berdasarkan kategori
+- 📄 Halaman detail produk
+- ❤️ Favorite Products
+- 🛒 Shopping Cart
+- 💳 Checkout Page
+- 📱 Responsive Design
+
+---
+
+# 🏷️ Kategori Produk
+
+SPORTCORE menyediakan berbagai kategori sepatu olahraga, di antaranya:
+
+- 🏃 Running
+- 🏀 Basketball
+- ⚽ Futsal
+- 💪 Training
+- 🎾 Tennis
+- 👟 Lifestyle
+
+---
+
+# 🛠️ Teknologi yang Digunakan
+
+| Teknologi | Fungsi |
+|-----------|--------|
+| HTML5 | Struktur halaman website |
+| CSS3 | Styling dan responsive layout |
+| JavaScript (ES6) | Interaktivitas dan logika aplikasi |
+
+---
+
+# 📂 Struktur Folder
+
+```text
+SPORTCORE/
+│
+├── css/
+├── js/
+├── img/
+├── pages/
+├── index.html
+└── README.md
+```
+
+---
+
+# 🚀 Cara Menjalankan Proyek
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/username/nama-repository.git
+```
+
+---
+
+### 2️⃣ Masuk ke Folder
+
+```bash
+cd nama-repository
+```
+
+---
+
+### 3️⃣ Jalankan Website
+
+Buka file
+
+```text
+index.html
+```
+
+langsung menggunakan browser,
+
+atau gunakan **Live Server** pada Visual Studio Code agar pengalaman pengembangan menjadi lebih mudah.
+
+---
+
+# 🔄 Alur Penggunaan Website
+
+```mermaid
+flowchart LR
+
+A[🏠 Home]
+--> B[🔍 Cari Produk]
+
+B --> C[📄 Detail Produk]
+
+C --> D[❤️ Favorite]
+
+C --> E[🛒 Keranjang]
+
+E --> F[💳 Checkout]
+
+F --> G[✅ Pesanan Berhasil]
+```
+
+---
+
+# 📸 Tampilan Website
+
+## 🏠 Halaman Home
+
+![Home](img/Tampilan_Home.png)
+
+---
+
+## 👟 Halaman Produk
+
+![Product](img/Tampilan_Produk.png)
+
+---
+
+## ❤️ Halaman Favorite
+
+![Favorite](img/Tampilan_favorite.png)
+
+---
+
+## 🛒 Halaman Keranjang
+
+![Cart](img/Tapilan_keranjang.png)
+
+---
+
+## 💳 Halaman Checkout
+
+![Checkout](img/Tampilan_checkout.png)
+
+---
+
+# ⚙️ Fitur yang Diimplementasikan
+
+| Fitur | Status |
+|--------|:------:|
+| Home Page | ✅ |
+| Product Page | ✅ |
+| Detail Product | ✅ |
+| Search Product | ✅ |
+| Filter Category | ✅ |
+| Favorite | ✅ |
+| Shopping Cart | ✅ |
+| Checkout | ✅ |
+| Responsive Layout | ✅ |
+
+---
+
+# 🎯 Tujuan Proyek
+
+Proyek ini dibuat sebagai latihan dalam mengembangkan website e-commerce dengan menerapkan:
+
+- Struktur kode yang rapi
+- Responsive Web Design
+- JavaScript DOM Manipulation
+- Local Storage
+- User Interface (UI)
+- User Experience (UX)
+
+---
+
+# 🚀 Rencana Pengembangan
+
+Beberapa fitur yang akan dikembangkan di masa mendatang:
+
+- 🔐 Login & Register
+- 👤 User Profile
+- 🛍️ Admin Dashboard
+- 🗄️ Integrasi Database (MySQL/Firebase)
+- 💳 Online Payment
+- 📦 Riwayat Pesanan
+- ⭐ Product Review & Rating
+- 🔔 Notifikasi
+- 🌙 Dark Mode
+
+---
+
+# 👨‍💻 Developer
+
+**Firman Nova Prayoga**
+
+Mahasiswa Teknik Informatika
+
+Universitas Negeri Surabaya (UNESA)
+
+---
+
+# 📜 Lisensi
+
+Proyek ini dibuat untuk **keperluan pembelajaran** dan **pengembangan portofolio**.
+
+---
+
+<div align="center">
+
+### ⭐ Jangan lupa berikan Star jika proyek ini bermanfaat!
+
+Made with ❤️ by **Firman**
+
+</div>
